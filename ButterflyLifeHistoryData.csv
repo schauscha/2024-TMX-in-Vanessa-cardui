@@ -1,0 +1,5 @@
+TreatmentNames,Treatments,Exposure,Concentration,LarvalSurvival,LarvalSurvival95CILower,LarvalSurvival95CIUpper,EmergenceAge,EmergenceAge95CILower,EmergenceAge95CIUpper,MedianAdultAge, MedianAdultAge95CILower, MedianAdultAge95CIUpper,TotalEggsLaid,TotalEggsStandardError,HatchingRate,HatchingRate95CILower,HatchingRate95CIUpper,TotalViableOffspring,TotalViableOffspringStandardError,EggsLaidPerDay,EggsLaidPerDay95CILower,EggsLaidPerDay95CIUpper
+Control,1,0,0,0.9,0.8368,0.963,26.37,25.88,26.85,16.28,14.91,17.66,2704,834,76.42,70.62,87.08,2149,798.61,180,109.63,250.94
+Low,2,1,0.1,0.766,0.677,0.8557,27.45,26.84,28.05,17.74,16.06,19.42,2052,582,61.6,49.55,70.51,1298,400.5,143,82.64,203.73
+Medium,3,1,1,0.912,0.8527,0.9713,26.12,25.63,26.61,15.85,14.3,17.41,1638,783,58.6,49.06,69.63,982.67,482.1,114,42.94,185.702
+High,4,1,10,0.755,0.665,0.846,28.22,27.54,28.91,16.41,14.47,18.35,1199,255,48.33,34.62,59.05,573.3,108.5,85,57.72,113.559
