@@ -16,11 +16,11 @@ ButterflyData <- read.csv(DataInPath, header = TRUE);
             #4 treatments (control, low, med, high)
                 #Mean
                 #95% Confidence intervals
-        # Hatching rate (per day) - 1/(hatching age) |> we put this as 1, since we don't have any data (only recorded daily and had always hatched by then)
+        # Hatching rate (per day), 1/(hatching age) |> we put this as 1, since we don't have any data (only recorded daily and had usually hatched by then)
             #4 treatments (control, low, med, high)
                 #Mean
                 #95% Confidence intervals
-        # Pupation rate (per day) - 1/(Emergence age - 1) ##Is 'Emergence Age' age since laying or since hatching? -going to assume since laying, but check with Lars
+        # Pupation rate (per day), 1/(Emergence age - 1) ##'Emergence Age' is age since laying
             #4 treatments (control, low, med, high)
                 #Mean
                 #95% Confidence intervals
@@ -60,7 +60,7 @@ LarvaMortL <- (1 - ButterflyData$LarvalSurvival95CILower) / (ButterflyData$Emerg
 LarvaMortalityRate <- c(LarvaMort[1], LarvaMortU[1], LarvaMortL[1], LarvaMort[2], LarvaMortU[2], LarvaMortL[2], LarvaMort[3], LarvaMortU[3], LarvaMortL[3], LarvaMort[4], LarvaMortU[4], LarvaMortL[4]);
 
 
-#Data for Adult life stage (all adults die), mean would probably be better than median (but it shouldn't matter)
+#Data for Adult life stage (all adults die) 
 AdultMort <- 1 / (ButterflyData$MedianAdultAge);
 AdultMortU <- 1 / (ButterflyData$MedianAdultAge95CIUpper);
 AdultMortL <- 1 / (ButterflyData$MedianAdultAge95CILower);
